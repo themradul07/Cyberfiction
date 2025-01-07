@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    position: relative;
+    overflow: hidden;
+}
+
+#page {
+    /* display: flex;
+    flex-direction: column; */
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: whitesmoke
+}
+
+#page2 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: whitesmoke;
+}
+
+#page3 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color:whitesmoke
+}
+
+#page4 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color:whitesmoke
+}
+#page5{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: whitesmoke;
+    /* z-index: 20; */
+}
+
+.loop {
+    position: absolute;
+    /* background-color: aqua; */
+    top: 35vh;
+    height: 20vh;
+    font-size: 200px;
+    white-space: nowrap;
+    /* font-family: serif; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    /* animation: infinite; */
+
+}
+
+.loop p {
+    font-weight: 400;
+    animation: anim 16s linear infinite;
+}
+
+.loop p span {
+    -webkit-text-stroke: 1.2px #000;
+    color: transparent;
+}
+
+@keyframes anim {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+
+}
+
+.nav {
+    /* background-color: white; */
+    position: fixed;
+    width: 100vw;
+    padding: 8px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    font-size: 22px;
+}
+
+canvas {
+    position: relative;
+    z-index: 100;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.nav button{
+    background-color: #000;
+    padding: 10px;
+    color: white;
+    border-radius: 100px;
+    border: none;
+}
+.p1txt{
+    position: absolute;
+    top: 50vh;
+    color: gray;
+    width: 50vw;
+    left: 5vw;
+    font-size: 18px;
+
+}
+/* .p1txt span{
+    width: 10vw;
+    text-align: end;
+    right: 10vh;
+} */
+.p1txt  b{
+    /* right: 10%;
+    position : absolute; */
+
+    color : black;
+}
+
+ .left{
+    position: absolute;
+    top: 15vh;
+    color: gray;
+    width: 45vw;
+    left: 8vw;
+    font-size: 18px;
+    
+}
+
+.left>p{
+     line-height: 65px;
+    letter-spacing: 5%;
+    color: black;
+    font-size: 48px;
+    font-weight: 700;
+}
+.right{
+    position: absolute;
+    top: 45vh;
+    color: gray;
+    width: 50vw;
+    right: 8vw;
+    font-size: 18px;
+    text-align: end;
+}
+
+.right>p{
+    line-height: 65px;
+    letter-spacing: 5%;
+    color: black;
+    font-size: 48px;
+    font-weight: 700;
+}
